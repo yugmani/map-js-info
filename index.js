@@ -16,5 +16,24 @@ const key2 = myMap.get(2);
 console.log(key2); //my number 2
 
 //checking if a key exists in the given map.
-let check = myMap.has('1');
-console.log(check); //true;
+let check1 = myMap.has('1');
+console.log(check1); //true;
+
+let check3 = myMap.has(true);
+console.log(check3); //false
+
+let check7 = myMap.has(7);
+console.log(check7); //false
+
+//Getting the size of map
+let size1 = myMap.size;
+console.log(size1); //3
+
+//Removing the value of a map by the key
+let outed1 = myMap.delete(true);
+console.log(outed1); //true; ->true is deleted.
+console.log(myMap.size); //2;
+
+//Removing everything from the map.
+myMap.clear();
+console.log(myMap.size); //0;
