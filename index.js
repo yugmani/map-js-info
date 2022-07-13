@@ -37,3 +37,15 @@ console.log(myMap.size); //2;
 //Removing everything from the map.
 myMap.clear();
 console.log(myMap.size); //0;
+
+//Chaining
+// ***************************
+
+const map1 = new Map();
+map1.set('John', 'name').set(23, 'Id').set(true, 'isGraduated');
+
+console.log(map1.size); //3
+console.log(map1.get(23)); //Id
+console.log(map1.get('id')); //undefined
+
+
