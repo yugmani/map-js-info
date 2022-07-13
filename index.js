@@ -48,4 +48,30 @@ console.log(map1.size); //3
 console.log(map1.get(23)); //Id
 console.log(map1.get('id')); //undefined
 
+//Iteration Over Map
+// ********************************
+let recipeMap = new Map([
+  ['cucumber', 500],
+  ['tomatoes', 350],
+  ['onion', 50],
+]);
 
+//iterate over keys (vegetables)
+for (let vegetable of recipeMap.keys()) {
+  console.log(vegetable);
+  //cucumber, tomatoes, onion
+}
+
+//iterate over values (amount)
+for (let amount of recipeMap.values()) {
+  console.log(amount);
+  //500, 350, 50
+}
+
+//iterate over [key, value] entries
+for (let entry of recipeMap) {
+  console.log(entry);
+  // ["cucumber", 500]
+  // ["tomatoes", 350]
+  // ["onion", 50]
+}
