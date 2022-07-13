@@ -10,5 +10,6 @@ h2 {
 .highlight {
   background-color: lightgray;
   font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
 }
 

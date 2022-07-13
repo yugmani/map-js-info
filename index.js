@@ -84,3 +84,23 @@ recipeMap.forEach((value, key, map) => {
   // tomatoes: 350
   // onion: 50
 });
+
+//Object.entries: Map from Object
+// **************************************
+
+//We can create a map from an object like this:
+let obj = {
+  name:"John",
+  age:30
+};
+
+let map = new Map(Object.entries(obj));
+
+console.log(map.get('name')); //John
+console.log(map.get("age")); //30
+
+map.set("grade", "six");
+console.log(map.get("grade")); //six;
+
+console.log(map.size); //3
+
