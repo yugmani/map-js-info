@@ -75,3 +75,12 @@ for (let entry of recipeMap) {
   // ["tomatoes", 350]
   // ["onion", 50]
 }
+
+// Using built-in forEach method of Map, similar to Array
+//runs the function for each (key, value) pair
+recipeMap.forEach((value, key, map) => {
+  console.log(`${key}: ${value}`);
+  //cucumber: 500
+  // tomatoes: 350
+  // onion: 50
+});
